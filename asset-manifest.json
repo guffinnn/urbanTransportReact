@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/urbanTransportReact/static/css/main.e6c13ad2.css",
+    "main.js": "/urbanTransportReact/static/js/main.53cfdf96.js",
+    "index.html": "/urbanTransportReact/index.html",
+    "main.e6c13ad2.css.map": "/urbanTransportReact/static/css/main.e6c13ad2.css.map",
+    "main.53cfdf96.js.map": "/urbanTransportReact/static/js/main.53cfdf96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.53cfdf96.js"
+  ]
+}

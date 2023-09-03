@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Urban Transport</title>
+    <link rel="stylesheet" type="text/css" href="../styles/sign_up_style.css"/>
+</head>
+<body>
+    <div class="background">
+        <div class="glass">
+            <div class="global__frame">
+                <div class="left__frame">
+                    <p id="sign__up">Зарегистрироваться</p>
+                    <form>
+                        <div class="inputs__frame">
+                            <div class="horizontal__frame">
+                                <div class="input__first__name">
+                                    <label for="first__name" id="label__1">Имя</label>
+                                    <input type="text" id="first__name" value="Имя">
+                                </div>
+                                <div class="input__second__name">
+                                    <label for="second__name" id="label__2" >Фамилия</label>
+                                    <input type="text" id="second__name" value="Фамилия">
+                                </div>
+                            </div>
+                            <div class="vertical__frame">
+                                <div class="input__work__email">
+                                    <label for="work__email" id="label__3">Адрес электронной почты</label>
+                                    <input type="text" id="work__email" value="Email">
+                                </div>
+                                <div class="input__password">
+                                    <label for="password" id="label__4">Пароль</label>
+                                    <input type="text" id="password" value="Пароль">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert__frame">
+                            <p class="alert"></p> <!-- Место для создания сообщения об ошибке -->
+                            <button type="submit">Создать аккаунт</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right__frame">
+                    <div class="glass__mini">
+                        <div class="glass__frame">
+                            <p id="question">Уже есть аккаунт?</p>
+                            <a href="../pages/log_in.html">Зайти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sign_up_script.js"></script>
+</body>
+</html>
