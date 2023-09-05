@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Ambidexter";
-    src: url("../fonts/ambidexter_regular.woff2") format("woff2"),
-    url("../fonts/ambidexter_regular.woff") format("woff");
+    src: url("./fonts/ambidexter_regular.woff2") format("woff2"),
+    url("./fonts/ambidexter_regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "Tilda Sans";
-    src: url("../fonts/TildaSans-Regular.woff2") format("woff2"),
-    url("../fonts/TildaSans-Regular.woff") format("woff");
+    src: url("./fonts/TildaSans-Regular.woff2") format("woff2"),
+    url("./fonts/TildaSans-Regular.woff") format("woff");
 }
 
 header {
