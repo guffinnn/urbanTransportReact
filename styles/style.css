@@ -82,7 +82,7 @@ body {
     flex-grow: 0;
     z-index: 0;
 
-    background: url('../img/mesh-190.png'), lightgray 50% /  cover no-repeat;
+    background: url('img/iphone.png'), lightgray 50% /  cover no-repeat;
 }
 
 .glass__layout {
@@ -142,7 +142,7 @@ body {
 
 #logo__text {
     color: #42465A;
-    font-family: 'Ambidexter';
+    font-family: 'Ambidexter', sans-serif;
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
