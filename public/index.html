@@ -8,6 +8,7 @@
     <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link type="text/css" href="styles/style.css">
 
     <title>Urban Transport</title>
     <style>
@@ -108,7 +109,7 @@
         flex-grow: 0;
         z-index: 0;
 
-        background: url('img/mesh-190.png'), lightgray 50% /  cover no-repeat;
+        background: url('./styles/img/mesh-190.png'), lightgray 50% /  cover no-repeat;
       }
 
       .glass__layout {
@@ -678,11 +679,11 @@
         <div class="advertisement__text">
           <div class="paragraph__1">
             <p id="paragraph1">
-              Прошли те дни ожидания в длинных очередях,<br>чтобы купить билеты.<br><br>С нашей простой и удобной системой продажи<br>билетов вы можете легко<br>покупать билеты, не выходя из дома или в дороге.
+              Прошли те дни ожидания в длинных очередях, чтобы купить билеты. С нашей простой и удобной системой продажи билетов вы можете легко покупать билеты, не выходя из дома или в дороге.
           </div>
           <div class="paragraph__frame__first">
             <div class="image__container">
-              <img alt="Ошибка..." src="img/iphone.png" class="image__container">
+              <img alt="Ошибка..." src="styles/img/iphone.png" class="image__container">
             </div>
             <div class="paragraph__frame__second">
               <p id="paragraph2">
@@ -740,10 +741,10 @@
       </div>
     </footer>
   </div>
-  <!-- Script -->
-  <script src="js/script.js"></script>
 
-  <noscript></noscript>
+  <noscript>
+    <script defer src="./js/script.js"></script>
+  </noscript>
   <div id="root"></div>
   </body>
 </html>

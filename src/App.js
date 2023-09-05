@@ -1,12 +1,9 @@
-// import RouteCard from './components/ExpenseItem';
+import RouteCard from './components/RouteCard';
 
 // Это JSX-code (JavaScript and XML)
 function App() {
   return (
-      // Начало XML кода
-      <div>
-        <h1>Let's get started!</h1>
-      </div>
+      <RouteCard />
   );
 }
 

@@ -46,7 +46,7 @@ body {
     flex-grow: 0;
     z-index: 0;
 
-    background: url("../img/background1.png"), lightgray 50% / cover no-repeat;
+    background: url("styles/img/background1.png"), lightgray 50% / cover no-repeat;
 }
 
 .glass {
