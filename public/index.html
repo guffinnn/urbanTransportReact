@@ -2,11 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link type="text/css" href="styles/style.css">
 
@@ -18,14 +16,14 @@
 
       @font-face {
         font-family: "Ambidexter";
-        src: url("fonts/ambidexter_regular.woff2") format("woff2"),
-        url("fonts/ambidexter_regular.woff") format("woff");
+        src: url("styles/fonts/ambidexter_regular.woff2") format("woff2"),
+        url("styles/fonts/ambidexter_regular.woff") format("woff");
       }
 
       @font-face {
         font-family: "Tilda Sans";
-        src: url("fonts/TildaSans-Regular.woff2") format("woff2"),
-        url("fonts/TildaSans-Regular.woff") format("woff");
+        src: url("styles/fonts/TildaSans-Regular.woff2") format("woff2"),
+        url("styles/fonts/TildaSans-Regular.woff") format("woff");
       }
 
 
@@ -109,7 +107,7 @@
         flex-grow: 0;
         z-index: 0;
 
-        background: url('./styles/img/mesh-190.png'), lightgray 50% /  cover no-repeat;
+        background: url('styles/img/mesh-190.png'), lightgray 50% /  cover no-repeat;
       }
 
       .glass__layout {
@@ -742,9 +740,6 @@
     </footer>
   </div>
 
-  <noscript>
-    <script defer src="./js/script.js"></script>
-  </noscript>
-  <div id="root"></div>
+  <script defer src="js/script.js"></script>
   </body>
 </html>

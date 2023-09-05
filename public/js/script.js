@@ -18,7 +18,7 @@ let addEventsForInputs = input => {
                 break
             // Кнопка Поиск
             case searchButton:
-                window.location.href = './pages/search.html';
+                window.location.href = '../pages/search.html';
                 break
             // По умолчанию - ничего не происходит
             default:
