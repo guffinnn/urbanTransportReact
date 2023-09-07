@@ -1,5 +1,8 @@
 // Строка подключения к API
-const baseUrlRoute = 'https://64e5fa4809e64530d17f5f7a.mockapi.io/api/db/routes';
+export const baseUrlRoute = 'https://64e5fa4809e64530d17f5f7a.mockapi.io/api/db/routes';
+
+// Итератор для получения уникальных значений из файла
+let numberOfData = 0;
 
 // Асинхронная функция, которая считывает данные из файла
 export async function fetchJson(setRouteData) {
@@ -14,7 +17,7 @@ export async function fetchJson(setRouteData) {
         // Данные получаются из ответа в формате JSON и сохраняются в переменной
         const jsonData = await response.json();
         if (jsonData.length > 0) {
-            setRouteData(jsonData[0]);
+            setRouteData(jsonData[numberOfData++]);
         }
     } catch (error) {
         console.error('Error:', error);
