@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/urbanTransportReact/static/css/main.708366f0.css",
-    "main.js": "/urbanTransportReact/static/js/main.0a38aca8.js",
+    "main.css": "/urbanTransportReact/static/css/main.cb73e206.css",
+    "main.js": "/urbanTransportReact/static/js/main.18e3e47d.js",
     "static/media/TildaSans-Regular.woff": "/urbanTransportReact/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
     "static/media/TildaSans-Regular.woff2": "/urbanTransportReact/static/media/TildaSans-Regular.ea99090449b0ab24b898.woff2",
     "index.html": "/urbanTransportReact/index.html",
-    "main.708366f0.css.map": "/urbanTransportReact/static/css/main.708366f0.css.map",
-    "main.0a38aca8.js.map": "/urbanTransportReact/static/js/main.0a38aca8.js.map"
+    "main.cb73e206.css.map": "/urbanTransportReact/static/css/main.cb73e206.css.map",
+    "main.18e3e47d.js.map": "/urbanTransportReact/static/js/main.18e3e47d.js.map"
   },
   "entrypoints": [
-    "static/css/main.708366f0.css",
-    "static/js/main.0a38aca8.js"
+    "static/css/main.cb73e206.css",
+    "static/js/main.18e3e47d.js"
   ]
 }
