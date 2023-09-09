@@ -112,6 +112,12 @@ header {
   border-radius: 20px;
   border: 1px solid #FFF;
   background: #132FBA;
+
+  cursor: pointer;
+}
+
+.filter__box:hover {
+  opacity: 75%;
 }
 
 .filter {
@@ -130,6 +136,12 @@ header {
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  cursor: pointer;
+}
+
+.sort__box:hover {
+  opacity: 75%;
 }
 
 .sort {
@@ -278,6 +290,10 @@ header {
   height: auto;
 }
 
-.modal__content {
+.tag__frame:hover {
+  opacity: 75%;
+}
 
+.tag__frame {
+  cursor: pointer;
 }

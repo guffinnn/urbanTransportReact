@@ -23,3 +23,30 @@ export async function fetchJson(setRouteData) {
         console.error('Error:', error);
     }
 }
+
+export async function fetchJsonFilter(setRouteData, filterTo, filterFrom) {
+    try {
+        const response = await fetch(baseUrlRoute);
+        if (!response.ok) {
+            throw new Error('HTTP error! status: ' + response.status);
+        }
+        const jsonData = await response.json();
+        if (jsonData.length > 0) {
+            // Применяем фильтры
+            const filteredData = jsonData.filter(item => {
+                // Фильтр по полю "to"
+                if (filterTo && item.to !== filterTo) {
+                    return false;
+                }
+                // Фильтр по полю "from"
+                if (filterFrom && item.from !== filterFrom) {
+                    return false;
+                }
+                return true;
+            });
+            setRouteData(filteredData[numberOfData++]);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
