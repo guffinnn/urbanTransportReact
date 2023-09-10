@@ -33,27 +33,27 @@ function Main() {
                 <div className="col-md-6 modal__window">
                     <Modal />
                 </div>
-                <div className="content">
+                <div className="row content">
                     <div className="col-md-12 filter__row">
                         <div className="filter__box">
                             <img alt={'No'} src={iconFilter} />
                             <p className="filter">Фильтры</p>
                         </div>
 
-                        <div className="sort__box">
+                        {/*<div className="sort__box">
                             <p className="sort">Сортировка</p>
                             <img alt={'No'} src={iconList} />
-                        </div>
+                        </div>*/}
                     </div>
-                    <div className="row col-md-12 column">
+                    <div className="row column">
                         <div className="search__row">
                             <div className="tags__row">
                                 <div className="tag">
                                     <Tag />
                                 </div>
-                                <div className="status">
+                                {/*<div className="status">
                                     <Status />
-                                </div>
+                                </div>*/}
                             </div>
 
                             <div className="col-md-12 placeholder">

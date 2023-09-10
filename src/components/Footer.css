@@ -15,7 +15,7 @@ footer {
     align-items: center;
     gap: 80px;
 
-    background: #FFFEFA;
+    background: #FFF;
 }
 
 .content {
@@ -28,15 +28,6 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 32px;
-
-    color: #000;
-    font-family: 'Tilda Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 24px */
-
-    cursor: pointer;
 }
 
 .social__links {
@@ -90,4 +81,19 @@ footer {
     text-decoration-line: underline;
 
     cursor: pointer;
+}
+
+.footer__link {
+    color: #000;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+
+    cursor: pointer;
+}
+
+.footer__link:hover {
+    color: #799CF0;
 }

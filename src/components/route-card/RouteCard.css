@@ -64,3 +64,19 @@
 
     border-inline: none;
 }
+
+#frame1 {
+    max-width: 80px;
+}
+
+#frame2 {
+    max-width: 80px;
+}
+
+.frame {
+    max-width: 240px;
+}
+
+#frame__button {
+    padding: 12px;
+}
