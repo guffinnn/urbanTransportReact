@@ -1,29 +1,11 @@
 // Импорт useState - для создания локального состояния routeData
 // Импорт useEffect - для выполнения эффекта только один раз
-import React, { useState, useEffect } from 'react';
-import {fetchJson} from "./responseJson";
+import React from 'react';
 
 // Функция для добавления компонента FrameTime
-function FrameTime() {
-    // Объект для хранения данных из JSON файла
-    const [routeData, setRouteData] = useState({
-        route_PK: '',
-        to: '',
-        from: '',
-        number_of_transport: '',
-        days: '',
-        type_of_transport: ''
-    });
-
-    // "Одноразовое" выполнение функции при создании компонента
-    useEffect(() => {
-        // Вызываем функцию с запросом к API
-        fetchJson(setRouteData);
-
-    }, []);
-
+function FrameTime({days}) {
     // Получаем значения из файла и возвращаем 'Ежедневно' или 'По будням'
-    const dateStr = (routeData.days === 'пвсчп св') ? 'Ежедневно' : 'По будням';
+    const dateStr = (days === 'пвсчп св') ? 'Ежедневно' : 'По будням';
 
     return (
         <div className="frame">

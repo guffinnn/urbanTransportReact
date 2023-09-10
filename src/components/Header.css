@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+            url('../fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('../fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    padding: 0 0;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    border-bottom: 1px solid #FFF;
+    background: #132FBA;
+}
+
+.header {
+    display: flex;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.nav-link {
+    color: #FFF;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+}
+
+.nav-link:hover {
+    color: #FFF6D2;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}

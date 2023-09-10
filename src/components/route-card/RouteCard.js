@@ -7,14 +7,14 @@ import ButtonAddToCart from "./ButtonAddToCart";
 import './RouteCard.css';
 
 // Функция динамического добавления карточки товара
-function RouteCard() {
+function RouteCard({ to, from, number_of_transport, days, type_of_transport }) {
     // Возвращаем карточку товара
     return (
         <div className="container">
             <div className="row col-md-12" id="route_card">
-                <FrameTransport />
-                <FrameRoute />
-                <FrameTime />
+                <FrameTransport number_of_transport={number_of_transport} type_of_transport={type_of_transport} />
+                <FrameRoute to={to} from={from} />
+                <FrameTime days={days} />
                 <FramePrice />
                 <ButtonAddToCart />
             </div>

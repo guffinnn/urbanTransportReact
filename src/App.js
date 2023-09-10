@@ -1,29 +1,19 @@
 // Импорт библиотеки React и компонента RouteCard
 import React from 'react';
-import RouteCard from './components/RouteCard';
-import {baseUrlRoute} from "./components/responseJson";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
-// Запрос к API
-const response = await fetch(baseUrlRoute),
-    // Данные из файла JSON
-      jsonData = await response.json(),
-    // Количество записей в файле
-      lengthOfData = jsonData.length;
-
+/*import FirstPage from "./pages/FirstPage";*/
 
 // Функция для создания главного компонента App
 function App() {
-  // Массив для перебора компонентов
-  const routeCards = [];
-
-  // Перебор компонентов
-  for (let i = 0; i < 9; i++) {
-    routeCards.push(<RouteCard key={i} />);
-  }
-
   return (
       <div>
-        {routeCards}
+          <Header/>
+          <Main />
+          {/*<FirstPage />*/}
+          <Footer />
       </div>
   );
 }
