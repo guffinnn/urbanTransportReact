@@ -9,7 +9,7 @@ import './Main.css';
 import iconFilter from '../styles/svg/filter.svg';
 import iconList from '../styles/svg/list.svg';
 
-import {routes} from "./routes";
+import {routes} from "./json/routes";
 
 // Функция для создания Main
 function Main() {
