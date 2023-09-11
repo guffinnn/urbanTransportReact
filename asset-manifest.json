@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/urbanTransportReact/static/css/main.cfc44edd.css",
-    "main.js": "/urbanTransportReact/static/js/main.e65ebc81.js",
+    "main.css": "/urbanTransportReact/static/css/main.12001a68.css",
+    "main.js": "/urbanTransportReact/static/js/main.8d75095c.js",
+    "static/media/background1.png": "/urbanTransportReact/static/media/background1.44f339b8e7a85e9aeba4.png",
     "static/media/TildaSans-Regular.woff": "/urbanTransportReact/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
-    "static/media/TildaSans-Regular.woff2": "/urbanTransportReact/static/media/TildaSans-Regular.ea99090449b0ab24b898.woff2",
     "index.html": "/urbanTransportReact/index.html",
-    "static/media/close.svg": "/urbanTransportReact/static/media/close.fef884e086d3868d382fdbba08966fcc.svg",
-    "static/media/filter.svg": "/urbanTransportReact/static/media/filter.8ed41a747d21aee4c928310565052f8b.svg",
-    "static/media/list.svg": "/urbanTransportReact/static/media/list.6fd139025db5c122c6fca9c27c23f6b9.svg",
-    "main.cfc44edd.css.map": "/urbanTransportReact/static/css/main.cfc44edd.css.map",
-    "main.e65ebc81.js.map": "/urbanTransportReact/static/js/main.e65ebc81.js.map"
+    "main.12001a68.css.map": "/urbanTransportReact/static/css/main.12001a68.css.map",
+    "main.8d75095c.js.map": "/urbanTransportReact/static/js/main.8d75095c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfc44edd.css",
-    "static/js/main.e65ebc81.js"
+    "static/css/main.12001a68.css",
+    "static/js/main.8d75095c.js"
   ]
 }
