@@ -11,7 +11,7 @@ function LogIn() {
             <div className="container glass">
                 <div className="row form">
                     <div className="col-md-12">
-                        <p className="col-md-12" id="sign__up">Авторизоваться</p>
+                        <p className="col-md-12" id="sign__up">Авторизация</p>
                         <form>
                             <Input />
                             <Submit />
