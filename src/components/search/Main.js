@@ -3,13 +3,13 @@
 import React from 'react';
 import Modal from "./modal-window/Modal";
 import Tag from "./Tag";
-import Status from "./Status";
+/*import Status from "../log-in/Status";*/
 import RouteCard from "./route-card/RouteCard";
 import './Main.css';
-import iconFilter from '../styles/svg/filter.svg';
-import iconList from '../styles/svg/list.svg';
+import iconFilter from '../../styles/svg/filter.svg';
+/*import iconList from '../../styles/svg/list.svg';*/
 
-import {routes} from "./json/routes";
+import {routes} from "../json/routes";
 
 // Функция для создания Main
 function Main() {

@@ -1,6 +1,6 @@
 // Импорт библиотеки React
 import React from 'react';
-import '../styles/log_in_style.css';
+import '../../styles/log_in_style.css';
 
 // Функция для создания Input
 function Input({email='Адрес электронной почты', password = 'Пароль'}) {

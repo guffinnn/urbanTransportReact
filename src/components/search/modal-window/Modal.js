@@ -2,7 +2,7 @@
 // Импорт стилей css
 import './Modal.css';
 import React, {useState, useEffect} from 'react';
-import {fetchJsonFilter} from "../responseJson";
+import {fetchJsonFilter} from "../../responseJson";
 
 // Функция для скрытия модального окна
 const closeModalWindow = () => {
