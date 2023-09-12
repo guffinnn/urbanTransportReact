@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/urbanTransportReact/static/css/main.af6111e2.css",
-    "main.js": "/urbanTransportReact/static/js/main.849baaf3.js",
+    "main.css": "/urbanTransportReact/static/css/main.a31379fb.css",
+    "main.js": "/urbanTransportReact/static/js/main.3057b533.js",
     "static/media/background1.png": "/urbanTransportReact/static/media/background1.44f339b8e7a85e9aeba4.png",
     "static/media/TildaSans-Regular.woff": "/urbanTransportReact/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
     "static/media/TildaSans-Regular.woff2": "/urbanTransportReact/static/media/TildaSans-Regular.ea99090449b0ab24b898.woff2",
     "index.html": "/urbanTransportReact/index.html",
-    "main.af6111e2.css.map": "/urbanTransportReact/static/css/main.af6111e2.css.map",
-    "main.849baaf3.js.map": "/urbanTransportReact/static/js/main.849baaf3.js.map"
+    "main.a31379fb.css.map": "/urbanTransportReact/static/css/main.a31379fb.css.map",
+    "main.3057b533.js.map": "/urbanTransportReact/static/js/main.3057b533.js.map"
   },
   "entrypoints": [
-    "static/css/main.af6111e2.css",
-    "static/js/main.849baaf3.js"
+    "static/css/main.a31379fb.css",
+    "static/js/main.3057b533.js"
   ]
 }
