@@ -3,191 +3,77 @@
 }
 
 @font-face {
-    font-family: 'Tilda Sans', sans-serif;
-    src: url("./fonts/TildaSans-Regular.woff");
-}
-
-html{
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    font-family: 'Tilda Sans';
+    src:
+            url('./fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('./fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-
-    width: 1536px;
-    height: 1024px;
-
-    min-width: 1000px;
-    min-height: 1024px;
-
-    background: #FFFEFA;
-}
-
-.background {
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 10px;
-    isolation: isolate;
-
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 0;
-
     background: url("./img/background1.png"), lightgray 50% / cover no-repeat;
 }
 
 .glass {
     /* Glass */
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 
     position: absolute;
-    width: 1376px;
-    height: 832px;
-    left: 79px;
-    top: 96px;
+    width: 90%;
+    height: auto;
+    left: 5%;
+    right: 5%;
+    top: 5%;
 
     background: rgba(255, 246, 210, 0.1);
     backdrop-filter: blur(25px);
+
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 30px;
 }
 
-.global__frame {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 101px;
+.form {
+    width: 100%;
 }
 
-.left__frame {
+form {
+    padding-top: 25px;
+}
+
+.registration {
     display: flex;
-    width: 500px;
-    padding: 57px 0 0 90px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 96px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-/* noinspection CssNoGenericFontName */
 #sign__up {
     color: #1E1E1E;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-}
+    text-align: left;
+    width: 100%;
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
 input {
     border: 0;
+    width: 100%;
 }
 
-.inputs__frame {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 41px;
-}
-
-.horizontal__frame {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-}
-
-.input__first__name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-}
-
-/* noinspection CssNoGenericFontName */
 label {
     color: #1E1E1E;
-    font-family: Tilda Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-#label__1 {
-    display: flex;
-    width: 243px;
-    height: 12.945px;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* noinspection CssNoGenericFontName */
-#first__name {
-    display: flex;
-    width: 243px;
-    height: 24px;
-    padding: 9px 15px;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    background: #F0F4F8;
-
-    color: #B9B9B9;
-    font-family: Tilda Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.input__second__name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-}
-
-#label__2 {
-    display: flex;
-    width: 243px;
-    height: 12.945px;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* noinspection CssNoGenericFontName */
-#second__name {
-    display: flex;
-    width: 243px;
-    height: 24px;
-    padding: 9px 15px;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 10px;
-    background: #F0F4F8;
-
-    color: #B9B9B9;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -199,6 +85,7 @@ label {
     flex-direction: column;
     align-items: flex-start;
     gap: 41px;
+    width: 100%;
 }
 
 .input__work__email {
@@ -206,21 +93,21 @@ label {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
+
+    width: 100%;
 }
 
 #label__3 {
     display: flex;
-    width: 545px;
-    height: 12.945px;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
-/* noinspection CssNoGenericFontName */
 #work__email {
     display: flex;
-    width: 545px;
-    padding: 11px 0 11px 15px;
+    width: 100%;
+    padding: 11px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -229,7 +116,7 @@ label {
     background: #F0F4F8;
 
     color: #B9B9B9;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -241,21 +128,21 @@ label {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
+
+    width: 100%;
 }
 
 #label__4 {
     display: flex;
-    width: 545px;
-    height: 12.945px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
-/* noinspection CssNoGenericFontName */
 #password {
     display: flex;
-    width: 545px;
-    padding: 11px 0 11px 15px;
+    width: 100%;
+    padding: 11px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -264,17 +151,22 @@ label {
     background: #F0F4F8;
 
     color: #B9B9B9;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-/* noinspection CssNoGenericFontName */
 button {
     display: flex;
-    padding: 17px 155px;
+    padding: 15px;
+
+    width: auto;
+
+    margin-left: 0;
+    margin-right: 0;
+
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -287,7 +179,7 @@ button {
 
     color: #FFF;
     text-align: center;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -297,79 +189,46 @@ button {
 button:hover {
     background: #121272;
     color: #A8A8A8;
+    border-inline: none;
 }
 
-.right__frame {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0 0 0 93px;
+button:focus {
+    background: #121272;
+    color: #A8A8A8;
+    border-inline: none;
 }
 
-.glass__mini {
-    box-sizing: border-box;
-
-    width: 591px;
-    height: 832px;
-
-    background: rgba(109, 109, 109, 0.1);
-    backdrop-filter: blur(25px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 0 30px 30px 0;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 0;
-
-    position: absolute;
-
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.glass__frame {
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-
-    position: absolute;
-    left: 31px;
-    top: 62px;
-}
-
-/* noinspection CssNoGenericFontName */
 #question {
-    width: 404px;
+    width: auto;
 
     color: #42465A;
     text-align: right;
-    font-family: Tilda Sans;
+    align-items: center;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    padding: 0;
+    margin: 0;
 }
 
-/* noinspection CssNoGenericFontName */
 a {
     display: flex;
-    width: 120px;
-    height: 20px;
-    /*padding-right: 0;*/
+
     align-items: center;
 
-    margin: 22px 0 20px 0;
-
     color: #1E1E1E;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
+
+    padding: 0;
+    margin: 0;
 }
 
 a:hover {
@@ -381,29 +240,117 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    align-self: stretch;
+    align-self: flex-start;
+
+    padding-left: 5%;
+    padding-right: 8%;
 }
 
-/* noinspection CssNoGenericFontName */
 .error{
     align-self: stretch;
 
     color: #FA3F3F;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-/* noinspection CssNoGenericFontName */
 .congratulation {
     align-self: stretch;
 
     color: #36C529;
-    font-family: Tilda Sans;
+    font-family: 'Tilda Sans', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.col-md-12 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.col-md-12 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.input__first__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    width: 100%;
+}
+
+#label__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#first__name {
+    display: flex;
+    width: 100%;
+    padding: 11px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    background: #F0F4F8;
+
+    color: #B9B9B9;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.input__second__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    width: 100%;
+}
+
+#label__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#second__name {
+    display: flex;
+    width: 100%;
+    padding: 11px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    background: #F0F4F8;
+
+    color: #B9B9B9;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.input__work__email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
 }
