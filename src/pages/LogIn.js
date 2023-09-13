@@ -1,53 +1,63 @@
-// Импорт необходимых модулей
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/log-in/Input";
 import Submit from "../components/log-in/Submit";
-import { users } from "../components/json/users";
 
-// Функция для добавления страницы авторизации
+// Функция добавления компонента LogIn
 function LogIn() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [showAlert, setShowAlert] = useState(false);
-    const [isError, setIsError] = useState(false);
-    const [successMessage, setSuccessMessage] = useState('');
+    // Переменные для работы с данными страницы
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [alertMessage, setAlertMessage] = useState("");
 
-    // Функция для проверки наличия пользователя в users
-    const checkUser = () => {
-        // С помощью тернарного оператора получаем true/false
-        const userExists = users.some(user => user.email === email && user.password === password);
+    const successMessage = "*Успешная авторизация";
+    const successClass = "success";
+    const errorMessage = "*Пользователь с таким email не существует";
+    const errorClass = "error";
 
-        // Если пользователь существует
-        if (userExists) {
-            // Выводим сообщение об успешной авторизации
-            setSuccessMessage('*Успешная авторизация');
-            setIsError(false);
-        // Если пользователь не существует
-        } else {
-            // Выводим сообщение об отклонении авторизации
-            setSuccessMessage('*Пользователь с таким E-mail не существует');
-            setIsError(true);
-        }
+    // Строка подключения к API
+    const baseUrl = "https://64e5fa4809e64530d17f5f7a.mockapi.io/api/db/users";
 
-
-        // Вывод сообщения
-        setShowAlert(true);
-    }
-
-    // Функция, которая удаляет значения inputs при первом клике на него
-    const handleInputChange = event => {
-        event.preventDefault();
-
-        const { name, value } = event.target;
+    // Функция для удаления данных с inputs
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
         if (name === "email") {
             setEmail(value);
         } else if (name === "password") {
             setPassword(value);
         }
+        setAlertMessage("");
+    };
 
-        console.log('a');
+    // Функция, которая вызывается при клике на кнопку подтверждения
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        checkUser();
+    };
+
+    // Функция, для показа состояния
+    function showAlert(message, className) {
+        setAlertMessage(message);
     }
+
+    // Функция для проверки наличия пользователя в БД
+    const checkUser = () => {
+        fetch(baseUrl)
+            .then((response) => response.json())
+            .then((users) => {
+                const foundUser = users.find(
+                    (user) => user.email === email && user.password === password
+                );
+                if (foundUser) {
+                    showAlert(successMessage, successClass);
+                } else {
+                    showAlert(errorMessage, errorClass);
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    };
 
     return (
         <div className="window">
@@ -55,12 +65,21 @@ function LogIn() {
                 <div className="row form">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p className="col-12" id="sign__up">Авторизация</p>
-                        <form>
+                        <form onSubmit={handleFormSubmit}>
                             <div className="row vertical__frame">
-                                <Input name="email" value={email} onChange={handleInputChange} />
-                                <Input name="password" value={password} onChange={handleInputChange} />
+                                <Input  type="text"
+                                        name="email"
+                                        value={email}
+                                        onChange={handleInputChange}
+                                        placeholder="Email" />
+                                <Input type="password"
+                                       name="password"
+                                       value={password}
+                                       onChange={handleInputChange}
+                                       placeholder="Пароль" />
                             </div>
-                            <Submit onClick={checkUser} />
+                            {alertMessage && <div id="alert" className="alert alert__frame">{alertMessage}</div>}
+                            <Submit />
                         </form>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
@@ -69,11 +88,6 @@ function LogIn() {
                             <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Регистрация</a>
                         </div>
                     </div>
-                    {showAlert && (
-                        <div className={isError ? "alert error" : "alert congratulation"}>
-                            {successMessage}
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

@@ -246,9 +246,7 @@ a:hover {
     padding-right: 8%;
 }
 
-.error{
-    align-self: stretch;
-
+.error {
     color: #FA3F3F;
     font-family: 'Tilda Sans', sans-serif;
     font-size: 15px;
@@ -257,9 +255,7 @@ a:hover {
     line-height: normal;
 }
 
-.congratulation {
-    align-self: stretch;
-
+.success {
     color: #36C529;
     font-family: 'Tilda Sans', sans-serif;
     font-size: 15px;

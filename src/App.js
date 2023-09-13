@@ -19,13 +19,14 @@ export default App;*/
 
 // Импорт библиотеки React и компонента RouteCard
 import React from 'react';
-import SignUp from "./pages/SignUp";
+/*import SignUp from "./pages/SignUp";*/
+import LogIn from "./pages/LogIn";
 
 // Функция для создания главного компонента App
 function App() {
     return (
         <div>
-            <SignUp />
+            <LogIn />
         </div>
     );
 }
