@@ -3,7 +3,6 @@ import React from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/sign-up/Input";
 import Submit from "../components/sign-up/Submit";
-import { users } from "../components/json/users";
 
 // Функция для добавления страницы авторизации
 function SignUp() {

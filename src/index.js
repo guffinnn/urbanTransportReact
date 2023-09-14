@@ -19,11 +19,11 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "signUp",
+        path: "/urbanTransportReact/signUp",
         element: <SignUp />,
     },
     {
-        path: "logIn",
+        path: "/urbanTransportReact/logIn",
         element: <LogIn />,
     },
 ]);
