@@ -9,10 +9,10 @@ import ButtonAccount from "../components/map/ButtonAccount";
 // Функция для добавления страницы авторизации
 function Map() {
     return (
-        <div className="container global__frame">
+        <div className="container global__frame__map">
             <div className="col-md-5 text-center navigation__frame">
                 <InputSearch />
-                <div className="col-md-12 buttons__frame">
+                <div className="col-md-12 buttons__frame__map">
                     <ButtonTicket />
                     <ButtonTransport />
                     <ButtonAccount />

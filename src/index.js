@@ -9,9 +9,10 @@ import {
 
 import './index.css';
 import App from './App';
+import SearchPage from "./pages/SearchPage";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
-import './styles/style.css';
+import Map from "./pages/Map";
 
 const router = createBrowserRouter([
     {
@@ -19,12 +20,20 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/urbanTransportReact/signUp",
+        path: "/signUp",
         element: <SignUp />,
     },
     {
-        path: "/urbanTransportReact/logIn",
+        path: "/logIn",
         element: <LogIn />,
+    },
+    {
+        path: "/map",
+        element: <Map />,
+    },
+    {
+        path: "/search",
+        element: <SearchPage />,
     },
 ]);
 

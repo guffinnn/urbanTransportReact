@@ -30,7 +30,7 @@ body {
     align-items: center;
 }
 
-.global__frame {
+.global__frame__map {
     display: flex;
     width: 100%;
     padding-left: 0;
@@ -89,7 +89,7 @@ input {
     line-height: normal;
 }
 
-.buttons__frame {
+.buttons__frame__map {
     display: flex;
     align-items: flex-start;
     gap: 35px;

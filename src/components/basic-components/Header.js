@@ -5,10 +5,10 @@ import './Header.css';
 // Функция для создания Header
 function Header() {
     return (
-        <header>
-            <div className="container header">
-                <div className="row">
-                    <div className="col-md-12 list">
+        <header className="global__header">
+            <div className="container__header">
+                <div className="row__header">
+                    <div className="col-md-12 list__header">
                         <nav className="navbar navbar-expand-sm">
                             <ul className="navbar-nav">
                                 <li className="nav-item">

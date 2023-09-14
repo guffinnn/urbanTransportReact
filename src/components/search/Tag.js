@@ -9,8 +9,8 @@ let tagStatus = 'Все виды транспорта';
 // Функция для создания компонента AppTag
 function Tag() {
     return (
-        <div className="tag__frame">
-            <p className="tag__text">{tagStatus}</p>
+        <div className="tag__frame__search">
+            <p className="tag__text__search">{tagStatus}</p>
             <img alt={'No'} src={iconClose}/>
         </div>
     );
