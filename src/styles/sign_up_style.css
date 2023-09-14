@@ -52,7 +52,7 @@ form {
     align-items: center;
 }
 
-#sign__up {
+#sign__up__paragraph {
     color: #1E1E1E;
     font-family: 'Tilda Sans', sans-serif;
     font-size: 36px;
@@ -158,7 +158,7 @@ label {
     line-height: normal;
 }
 
-button {
+.button__autorization {
     display: flex;
     padding: 15px;
 
@@ -214,7 +214,7 @@ button:focus {
     margin: 0;
 }
 
-a {
+.link__autorization {
     display: flex;
 
     align-items: center;

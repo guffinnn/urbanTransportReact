@@ -175,7 +175,7 @@ body {
     flex-grow: 0;
 }
 
-#sign__up__default {
+.link__sign__up {
     display: flex;
     padding: 17px 51px;
     justify-content: center;
@@ -202,9 +202,11 @@ body {
     animation-duration: 100ms;
 }
 
-#sign__up__default:hover {
+.link__sign__up:hover {
     background: #121272;
     color: #A8A8A8;
+
+    text-decoration: none;
 }
 
 #log__in__default {

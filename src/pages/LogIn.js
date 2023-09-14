@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/log-in/Input";
 import Submit from "../components/log-in/Submit";
@@ -12,7 +12,7 @@ function LogIn() {
 
     const successMessage = "*Успешная авторизация";
     const successClass = "success";
-    const errorMessage = "*Пользователь с таким email не существует";
+    const errorMessage = "*Пользователя с такими данными не существует";
     const errorClass = "error";
 
     // Строка подключения к API
@@ -64,7 +64,7 @@ function LogIn() {
             <div className="container glass">
                 <div className="row form">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p className="col-12" id="sign__up">Авторизация</p>
+                        <p className="col-12" id="sign__up__paragraph">Авторизация</p>
                         <form onSubmit={handleFormSubmit}>
                             <div className="row vertical__frame">
                                 <Input  type="text"
@@ -78,14 +78,14 @@ function LogIn() {
                                        onChange={handleInputChange}
                                        placeholder="Пароль" />
                             </div>
-                            {alertMessage && <div id="alert" className="alert alert__frame">{alertMessage}</div>}
+                            {alertMessage && <div id="alert" className={`alert alert__frame ${alertMessage === successMessage ? successClass : errorClass}`}>{alertMessage}</div>}
                             <Submit />
                         </form>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                         <div className="registration">
                             <p id="question" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Еще не зарегистрированы?</p>
-                            <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Регистрация</a>
+                            <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12 link">Регистрация</a>
                         </div>
                     </div>
                 </div>

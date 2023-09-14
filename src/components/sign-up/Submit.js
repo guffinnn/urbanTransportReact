@@ -7,7 +7,7 @@ function Submit({submit = 'Зарегистрироваться'}) {
     return (
         <div className="row alert__frame ">
             <p className="col-md-12 alert"></p>
-            <button className="col-md-12" type="submit">{submit}</button>
+            <button className="col-md-12 button__autorization" type="submit">{submit}</button>
         </div>
     );
 }

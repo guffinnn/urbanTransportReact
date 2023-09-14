@@ -12,7 +12,7 @@ function SignUp() {
             <div className="container glass">
                 <div className="row form">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p className="col-12" id="sign__up">Регистрация</p>
+                        <p className="col-12" id="sign__up__paragraph">Регистрация</p>
                         <form>
                             <div className="row vertical__frame">
                                 <Input name="name" />
@@ -26,7 +26,7 @@ function SignUp() {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                         <div className="registration">
                             <p id="question" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Уже есть аккаунт?</p>
-                            <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Авторизация</a>
+                            <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12 link__autorization">Авторизация</a>
                         </div>
                     </div>
                 </div>
