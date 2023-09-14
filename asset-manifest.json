@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/urbanTransportReact/static/css/main.dac54fd7.css",
-    "main.js": "/urbanTransportReact/static/js/main.0e92f0e1.js",
+    "main.js": "/urbanTransportReact/static/js/main.6c672586.js",
     "static/media/iphone.png": "/urbanTransportReact/static/media/iphone.b2742fe495eeb8a323da.png",
     "static/media/mesh-190.png": "/urbanTransportReact/static/media/mesh-190.133e9d04b06e0d5c2201.png",
     "static/media/TildaSans-Regular.woff": "/urbanTransportReact/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
@@ -12,10 +12,10 @@
     "static/media/yandex_maps.svg": "/urbanTransportReact/static/media/yandex_maps.41ef0e238291d90bf37e1b54325f7a35.svg",
     "index.html": "/urbanTransportReact/index.html",
     "main.dac54fd7.css.map": "/urbanTransportReact/static/css/main.dac54fd7.css.map",
-    "main.0e92f0e1.js.map": "/urbanTransportReact/static/js/main.0e92f0e1.js.map"
+    "main.6c672586.js.map": "/urbanTransportReact/static/js/main.6c672586.js.map"
   },
   "entrypoints": [
     "static/css/main.dac54fd7.css",
-    "static/js/main.0e92f0e1.js"
+    "static/js/main.6c672586.js"
   ]
 }
