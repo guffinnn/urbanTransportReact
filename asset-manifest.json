@@ -1,10 +1,23 @@
 {
   "files": {
-    "main.css": "/urbanTransportReact/static/css/main.57831960.css",
-    "main.js": "/urbanTransportReact/static/js/main.54c9b74f.js",
+    "main.css": "/urbanTransportReact/static/css/main.e6c13ad2.css",
+    "main.js": "/urbanTransportReact/static/js/main.c8fb105b.js",
+    "static/css/784.b515c370.chunk.css": "/urbanTransportReact/static/css/784.b515c370.chunk.css",
+    "static/js/784.f4cdfc54.chunk.js": "/urbanTransportReact/static/js/784.f4cdfc54.chunk.js",
+    "static/css/336.36ec32ee.chunk.css": "/urbanTransportReact/static/css/336.36ec32ee.chunk.css",
+    "static/js/336.4936127d.chunk.js": "/urbanTransportReact/static/js/336.4936127d.chunk.js",
+    "static/css/759.2e8b6edb.chunk.css": "/urbanTransportReact/static/css/759.2e8b6edb.chunk.css",
+    "static/js/759.d825a63c.chunk.js": "/urbanTransportReact/static/js/759.d825a63c.chunk.js",
+    "static/css/224.e3bb65c2.chunk.css": "/urbanTransportReact/static/css/224.e3bb65c2.chunk.css",
+    "static/js/224.060c2c67.chunk.js": "/urbanTransportReact/static/js/224.060c2c67.chunk.js",
+    "static/css/789.b0d81c09.chunk.css": "/urbanTransportReact/static/css/789.b0d81c09.chunk.css",
+    "static/js/789.e85320a7.chunk.js": "/urbanTransportReact/static/js/789.e85320a7.chunk.js",
+    "static/media/background1.png": "/urbanTransportReact/static/media/background1.44f339b8e7a85e9aeba4.png",
     "static/media/iphone.png": "/urbanTransportReact/static/media/iphone.b2742fe495eeb8a323da.png",
     "static/media/mesh-190.png": "/urbanTransportReact/static/media/mesh-190.133e9d04b06e0d5c2201.png",
+    "static/media/ambidexter_regular.woff": "/urbanTransportReact/static/media/ambidexter_regular.7838891d83ebd55e00de.woff",
     "static/media/TildaSans-Regular.woff": "/urbanTransportReact/static/media/TildaSans-Regular.da50688203ec449eaec5.woff",
+    "static/media/ambidexter_regular.woff2": "/urbanTransportReact/static/media/ambidexter_regular.1937b23d113182d23019.woff2",
     "static/media/TildaSans-Regular.woff2": "/urbanTransportReact/static/media/TildaSans-Regular.ea99090449b0ab24b898.woff2",
     "static/media/belavia.svg": "/urbanTransportReact/static/media/belavia.34d42a2855edbad420315e7e6c1ab403.svg",
     "static/media/belzhd.svg": "/urbanTransportReact/static/media/belzhd.12588ea2a2ad5ec8e79463c1a2daf6df.svg",
@@ -16,11 +29,21 @@
     "index.html": "/urbanTransportReact/index.html",
     "static/media/close.svg": "/urbanTransportReact/static/media/close.fef884e086d3868d382fdbba08966fcc.svg",
     "static/media/filter.svg": "/urbanTransportReact/static/media/filter.8ed41a747d21aee4c928310565052f8b.svg",
-    "main.57831960.css.map": "/urbanTransportReact/static/css/main.57831960.css.map",
-    "main.54c9b74f.js.map": "/urbanTransportReact/static/js/main.54c9b74f.js.map"
+    "main.e6c13ad2.css.map": "/urbanTransportReact/static/css/main.e6c13ad2.css.map",
+    "main.c8fb105b.js.map": "/urbanTransportReact/static/js/main.c8fb105b.js.map",
+    "784.b515c370.chunk.css.map": "/urbanTransportReact/static/css/784.b515c370.chunk.css.map",
+    "784.f4cdfc54.chunk.js.map": "/urbanTransportReact/static/js/784.f4cdfc54.chunk.js.map",
+    "336.36ec32ee.chunk.css.map": "/urbanTransportReact/static/css/336.36ec32ee.chunk.css.map",
+    "336.4936127d.chunk.js.map": "/urbanTransportReact/static/js/336.4936127d.chunk.js.map",
+    "759.2e8b6edb.chunk.css.map": "/urbanTransportReact/static/css/759.2e8b6edb.chunk.css.map",
+    "759.d825a63c.chunk.js.map": "/urbanTransportReact/static/js/759.d825a63c.chunk.js.map",
+    "224.e3bb65c2.chunk.css.map": "/urbanTransportReact/static/css/224.e3bb65c2.chunk.css.map",
+    "224.060c2c67.chunk.js.map": "/urbanTransportReact/static/js/224.060c2c67.chunk.js.map",
+    "789.b0d81c09.chunk.css.map": "/urbanTransportReact/static/css/789.b0d81c09.chunk.css.map",
+    "789.e85320a7.chunk.js.map": "/urbanTransportReact/static/js/789.e85320a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57831960.css",
-    "static/js/main.54c9b74f.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c8fb105b.js"
   ]
 }
