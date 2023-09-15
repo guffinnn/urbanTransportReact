@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/urbanTransportReact/static/css/main.e6c13ad2.css",
-    "main.js": "/urbanTransportReact/static/js/main.c8fb105b.js",
+    "main.css": "/urbanTransportReact/static/css/main.612c742f.css",
+    "main.js": "/urbanTransportReact/static/js/main.70a9af5e.js",
     "static/css/784.b515c370.chunk.css": "/urbanTransportReact/static/css/784.b515c370.chunk.css",
-    "static/js/784.f4cdfc54.chunk.js": "/urbanTransportReact/static/js/784.f4cdfc54.chunk.js",
-    "static/css/336.36ec32ee.chunk.css": "/urbanTransportReact/static/css/336.36ec32ee.chunk.css",
-    "static/js/336.4936127d.chunk.js": "/urbanTransportReact/static/js/336.4936127d.chunk.js",
+    "static/js/784.52587f98.chunk.js": "/urbanTransportReact/static/js/784.52587f98.chunk.js",
+    "static/css/105.1de818cd.chunk.css": "/urbanTransportReact/static/css/105.1de818cd.chunk.css",
+    "static/js/105.e1a895cb.chunk.js": "/urbanTransportReact/static/js/105.e1a895cb.chunk.js",
     "static/css/759.2e8b6edb.chunk.css": "/urbanTransportReact/static/css/759.2e8b6edb.chunk.css",
     "static/js/759.d825a63c.chunk.js": "/urbanTransportReact/static/js/759.d825a63c.chunk.js",
     "static/css/224.e3bb65c2.chunk.css": "/urbanTransportReact/static/css/224.e3bb65c2.chunk.css",
@@ -29,12 +29,12 @@
     "index.html": "/urbanTransportReact/index.html",
     "static/media/close.svg": "/urbanTransportReact/static/media/close.fef884e086d3868d382fdbba08966fcc.svg",
     "static/media/filter.svg": "/urbanTransportReact/static/media/filter.8ed41a747d21aee4c928310565052f8b.svg",
-    "main.e6c13ad2.css.map": "/urbanTransportReact/static/css/main.e6c13ad2.css.map",
-    "main.c8fb105b.js.map": "/urbanTransportReact/static/js/main.c8fb105b.js.map",
+    "main.612c742f.css.map": "/urbanTransportReact/static/css/main.612c742f.css.map",
+    "main.70a9af5e.js.map": "/urbanTransportReact/static/js/main.70a9af5e.js.map",
     "784.b515c370.chunk.css.map": "/urbanTransportReact/static/css/784.b515c370.chunk.css.map",
-    "784.f4cdfc54.chunk.js.map": "/urbanTransportReact/static/js/784.f4cdfc54.chunk.js.map",
-    "336.36ec32ee.chunk.css.map": "/urbanTransportReact/static/css/336.36ec32ee.chunk.css.map",
-    "336.4936127d.chunk.js.map": "/urbanTransportReact/static/js/336.4936127d.chunk.js.map",
+    "784.52587f98.chunk.js.map": "/urbanTransportReact/static/js/784.52587f98.chunk.js.map",
+    "105.1de818cd.chunk.css.map": "/urbanTransportReact/static/css/105.1de818cd.chunk.css.map",
+    "105.e1a895cb.chunk.js.map": "/urbanTransportReact/static/js/105.e1a895cb.chunk.js.map",
     "759.2e8b6edb.chunk.css.map": "/urbanTransportReact/static/css/759.2e8b6edb.chunk.css.map",
     "759.d825a63c.chunk.js.map": "/urbanTransportReact/static/js/759.d825a63c.chunk.js.map",
     "224.e3bb65c2.chunk.css.map": "/urbanTransportReact/static/css/224.e3bb65c2.chunk.css.map",
@@ -43,7 +43,7 @@
     "789.e85320a7.chunk.js.map": "/urbanTransportReact/static/js/789.e85320a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.c8fb105b.js"
+    "static/css/main.612c742f.css",
+    "static/js/main.70a9af5e.js"
   ]
 }
