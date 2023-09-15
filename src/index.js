@@ -1,5 +1,5 @@
 // Импорт файлов React
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 
 import {
@@ -8,11 +8,11 @@ import {
 } from "react-router-dom";
 
 import './index.css';
-import App from './App';
-import SearchPage from "./pages/SearchPage";
-import SignUp from "./pages/SignUp";
-import LogIn from "./pages/LogIn";
-import Map from "./pages/Map";
+const App = lazy(() => import('./App'));
+const SearchPage = lazy(() => import('./pages/SearchPage'));
+const SignUp = lazy(() => import('./pages/SignUp'));
+const LogIn = lazy(() => import('./pages/LogIn'));
+const Map = lazy(() => import('./pages/Map'));
 
 const router = createBrowserRouter([
     {
@@ -40,6 +40,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
+        <Suspense fallback={<div>Loading...</div>}>
+            <RouterProvider router={router} />
+        </Suspense>
+    </React.StrictMode>,
 );

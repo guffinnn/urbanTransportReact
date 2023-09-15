@@ -18,8 +18,8 @@ function FirstPage() {
                                 <p id="logo__text">Все ваши билеты в одном месте</p>
                             </div>
                             <div className="buttons__frame">
-                                <a className="link__sign__up" href="{/*/search*/}">Зарегистрироваться бесплатно</a>
-                                <a id="log__in__default" href="{/*/search*/}">Авторизоваться</a>
+                                <a className="link__sign__up" href="/signUp">Зарегистрироваться бесплатно</a>
+                                <a id="log__in__default" href="/search">Авторизоваться</a>
                             </div>
                         </div>
                     </div>
