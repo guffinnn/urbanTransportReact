@@ -1,3 +1,4 @@
+// Импорт необходимых модулей
 import React, { useState } from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/log-in/Input";
@@ -87,7 +88,7 @@ function LogIn() {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                         <div className="registration">
                             <p id="question" className="col-lg-6 col-md-6 col-sm-12 col-xs-12">Еще не зарегистрированы?</p>
-                            <a href="#" className="col-lg-6 col-md-6 col-sm-12 col-xs-12 link">Регистрация</a>
+                            <a href="/signUp" className="col-lg-6 col-md-6 col-sm-12 col-xs-12 link">Регистрация</a>
                         </div>
                     </div>
                 </div>

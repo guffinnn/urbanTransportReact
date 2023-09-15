@@ -409,6 +409,9 @@ footer {
     align-items: center;
     padding: 80px 48px;
     gap: 80px;
+    top: 3000px;
+
+    width: 100%;
 
     position: absolute;
 }
@@ -431,10 +434,16 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 24px */
+    color: #000;
+    text-decoration: none;
+
+    cursor: pointer;
 }
 
 .footer__link:hover {
     color: #799CF0;
+
+    text-decoration: none;
 }
 
 .social__links {
@@ -476,6 +485,9 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 24px 32px;
+
+    margin: 0;
+    padding: 14px;
 }
 
 .commercial__links {
