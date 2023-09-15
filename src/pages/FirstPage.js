@@ -19,7 +19,7 @@ function FirstPage() {
                             </div>
                             <div className="buttons__frame">
                                 <a className="link__sign__up" href="/signUp">Зарегистрироваться бесплатно</a>
-                                <a id="log__in__default" href="/search">Авторизоваться</a>
+                                <a id="log__in__default" href="/logIn">Авторизоваться</a>
                             </div>
                         </div>
                     </div>
