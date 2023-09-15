@@ -33,6 +33,8 @@ function LogIn() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         checkUser();
+
+        /*history.push("/map");*/
     };
 
     // Функция, для показа состояния
