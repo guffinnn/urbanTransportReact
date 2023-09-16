@@ -11,11 +11,12 @@ import {
 import Loading from "./components/basic-components/Loader";
 
 // Использование "ленивого" подключения страниц
-const App = lazy(() => import('./App'));
-const SearchPage = lazy(() => import('./pages/SearchPage'));
-const SignUp = lazy(() => import('./pages/SignUp'));
-const LogIn = lazy(() => import('./pages/LogIn'));
-const Map = lazy(() => import('./pages/Map'));
+const App = lazy(() => import('./App')),
+      SearchPage = lazy(() => import('./pages/SearchPage')),
+      SignUp = lazy(() => import('./pages/SignUp')),
+      LogIn = lazy(() => import('./pages/LogIn')),
+      Map = lazy(() => import('./pages/Map')),
+      Account = lazy(() => import('./pages/Account'));
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     {
         path: "search",
         element: <SearchPage />,
+    },
+    {
+        path: "account",
+        element: <Account />,
     },
 ]);
 

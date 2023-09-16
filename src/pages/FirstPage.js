@@ -6,7 +6,7 @@ import iconBelzhd from '../styles/svg/belzhd.svg';
 import iconGoogle from '../styles/svg/google_maps.svg';
 import iconYandex from '../styles/svg/yandex_maps.svg';
 
-// Функция для создания Header
+// Функция для создания FirstPage
 function FirstPage() {
     return (
         <div className="auto__layout__for__footer">
@@ -83,7 +83,7 @@ function FirstPage() {
                         <a id="home" className="footer__link" href="#">Главная</a>
                         <a id="map" className="footer__link" href="/map">Карта</a>
                         <a id="catalog" className="footer__link" href="/search">Каталог</a>
-                        <a id="account" className="footer__link" href="{/*/account*/}">Аккаунт</a>
+                        <a id="account" className="footer__link" href="/account">Аккаунт</a>
                     </div>
                     <div className="social__links">
                         <a href="https://www.linkedin.com/in/daniil-dashkevich-436058288/">
