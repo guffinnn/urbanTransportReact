@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+            url('../../../fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('../../../fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.delete__account__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text__account__button {
+    width: auto;
+}
+
+.text__content {
+    color: #000;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+.button__frame {
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+
+#delete:hover {
+    background: #FF8080;
+}

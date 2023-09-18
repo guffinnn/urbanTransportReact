@@ -12,16 +12,16 @@ function Header() {
                         <nav className="navbar navbar-expand-sm">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Поиск</a>
+                                    <a className="nav-link" href="/search">Поиск</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Карта</a>
+                                    <a className="nav-link" href="/map">Карта</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Корзина</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Аккаунт</a>
+                                    <a className="nav-link" href="/account">Аккаунт</a>
                                 </li>
                             </ul>
                         </nav>

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+            url('../../../fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('../../../fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box__account {
+    display: flex;
+    padding: 40px;
+    align-items: flex-start;
+    gap: 100px;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 rgba(121, 156, 240, 0.50);
+
+    width: 100%;
+    height: 100%;
+}
+
+.global__account__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.global__head__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.head__info__account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text__account__info {
+    width: 100%;
+    height: 100%;
+}
+
+.text__paragraph {
+    color: #132FBA;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+
+    width: auto;
+}
+
+.email__account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.heading__email__account {
+    color: #5D5D5D;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+.value__email__account {
+    color: #000;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 60px */
+}
+
+.divider__account {
+    width: 1px;
+    height: 300px;
+    background: #132FBA;
+}
+
+.buttons__account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
