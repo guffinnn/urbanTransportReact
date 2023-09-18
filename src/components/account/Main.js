@@ -22,8 +22,8 @@ function Main() {
                     <div className="col-md-12">
                         <AccountInfo />
                     </div>
-                    <div className="col-lg-6 col-md-12">
-                        <div className="row">
+                    <div className="col-md-12 global__frame__account">
+                        <div className="row routes__global__frame__account">
                             <div className="col-12">
                                 <div className="routes__boxes">
                                     <NewRoutes />

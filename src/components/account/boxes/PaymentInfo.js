@@ -1,8 +1,9 @@
 import React from 'react';
+import './PaymentInfo.css';
 
 function PaymentInfo() {
     return (
-        <div className="container">
+        <div className="container global__payment__frame">
             <div className="row">
                 <div className="col-12">
                     <div className="payments__account">
@@ -19,6 +20,7 @@ function PaymentInfo() {
                                 </div>
                                 <div className="card__number">
                                     {/* Ваш код для номера карты */}
+                                    <p className="card__number__text">1111 **** **** 1111</p>
                                 </div>
                             </div>
                             <div className="initials__frame">
@@ -27,6 +29,7 @@ function PaymentInfo() {
                                 </div>
                                 <div className="initials">
                                     {/* Ваш код для владельца карты */}
+                                    <p className="initials__text">Lilya Tarusina</p>
                                 </div>
                             </div>
                         </div>

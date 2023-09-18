@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+            url('../../../fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('../../../fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.history__route__account {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 rgba(121, 156, 240, 0.50);
+}
+
+.heading__history__route {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading__account {
+    color: #132FBA;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+}
+
+.history__routes__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
