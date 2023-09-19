@@ -12,7 +12,7 @@ function ButtonTicket({name}) {
                     <img alt={'No'} src={iconTicket}/>
                 </div>
             </div>
-            <p className="paragraph1">Билеты</p>
+            <a href="/search" className="paragraph1">Билеты</a>
         </div>
     );
 }

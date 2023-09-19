@@ -5,8 +5,9 @@ import InputSearch from "../components/map/InputSearch";
 import ButtonTicket from "../components/map/ButtonTicket";
 import ButtonTransport from "../components/map/ButtonTransport";
 import ButtonAccount from "../components/map/ButtonAccount";
+import Modal from "../components/map/Modal";
 
-// Функция для добавления страницы авторизации
+// Функция для добавления компонента Map
 function Map() {
     return (
         <div className="container global__frame__map">
@@ -17,6 +18,7 @@ function Map() {
                     <ButtonTransport />
                     <ButtonAccount />
                 </div>
+                <Modal />
             </div>
             <div className="col-md-12 map__frame">
                 <div className="col-md-12 svg__map">

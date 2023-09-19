@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/log-in/Input";
 import Submit from "../components/log-in/Submit";
+/*import { useHistory } from 'react-router-dom';*/
+/*import {users} from "../components/json/users";
+
+export let user_PK = users.users_PK;*/
 
 // Функция добавления компонента LogIn
 function LogIn() {
@@ -34,14 +38,14 @@ function LogIn() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         checkUser();
-
-        /*history.push("/map");*/
     };
 
     // Функция, для показа состояния
     function showAlert(message, className) {
         setAlertMessage(message);
     }
+
+    /*const history = useHistory();*/
 
     // Функция для проверки наличия пользователя в БД
     const checkUser = () => {
@@ -53,6 +57,7 @@ function LogIn() {
                 );
                 if (foundUser) {
                     showAlert(successMessage, successClass);
+                    /*history.push("/map");*/
                 } else {
                     showAlert(errorMessage, errorClass);
                 }

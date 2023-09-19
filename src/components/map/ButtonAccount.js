@@ -12,7 +12,7 @@ function ButtonAccount({name}) {
                     <img alt={'No'} src={iconAccount}/>
                 </div>
             </div>
-            <p className="paragraph3">Аккаунт</p>
+            <a href="/account" className="paragraph3">Аккаунт</a>
         </div>
     );
 }

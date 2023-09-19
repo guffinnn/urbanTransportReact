@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+            url('../../fonts/TildaSans-Regular.woff2') format('woff2'),
+            url('../../fonts/TildaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modal__frame__map {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 #132FBA;
+
+    height: auto;
+    width: auto;
+}
+
+.now__map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.in__process__map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.heading__map {
+    color: #132FBA;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 54px */
+}
+
+.heading {
+    margin: 0 0 0 0;
+}
+
+.text__map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.text__content {
+    color: #363636;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 30px */
+
+    margin: 0 0 0 0;
+}
