@@ -2,7 +2,7 @@
 // Импорт компонентов страниц
 import React from 'react';
 import './NewRoutes.js.css';
-import FrameRoute from "../../search/route-card/FrameRoute";
+import FrameRoute from "../../catalog/route-card/FrameRoute";
 
 // Функция для создания NewRoutes
 function NewRoutes() {

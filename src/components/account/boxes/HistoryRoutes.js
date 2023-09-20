@@ -1,6 +1,6 @@
 import React from 'react';
 import './HistoryRoutes.css';
-import FrameRoute from "../../search/route-card/FrameRoute";
+import FrameRoute from "../../catalog/route-card/FrameRoute";
 
 function HistoryRoutes() {
     return (

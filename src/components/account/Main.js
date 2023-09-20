@@ -6,6 +6,7 @@ import NewRoutes from "./boxes/NewRoutes";
 import HistoryRoutes from "./boxes/HistoryRoutes";
 import PaymentInfo from "./boxes/PaymentInfo";
 import './Main.css';
+/*import PaymentModal from "./modals/PaymentModal";*/
 
 // Функция для создания Main
 function Main() {
@@ -17,6 +18,9 @@ function Main() {
                         <p className="heading__account__first">Аккаунт</p>
                         <p className="text__account">Личная страница пользователя</p>
                     </div>
+                </div>
+                <div className="col-md-12 global__window__modal">
+                    {/*<PaymentModal />*/}
                 </div>
                 <div className="row boxes__account">
                     <div className="col-md-12">

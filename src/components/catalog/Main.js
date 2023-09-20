@@ -3,11 +3,9 @@
 import React from 'react';
 import Modal from "./modal-window/Modal";
 import Tag from "./Tag";
-/*import Status from "../log-in/Status";*/
 import RouteCard from "./route-card/RouteCard";
 import './Main.css';
 import iconFilter from '../../styles/svg/filter.svg';
-/*import iconList from '../../styles/svg/list.svg';*/
 
 import {routes} from "../json/routes";
 
@@ -29,11 +27,6 @@ function Main() {
                             <img alt={'No'} src={iconFilter} />
                             <p className="filter__search">Фильтры</p>
                         </div>
-
-                        {/*<div className="sort__box">
-                            <p className="sort">Сортировка</p>
-                            <img alt={'No'} src={iconList} />
-                        </div>*/}
                     </div>
                     <div className="row column__search">
                         <div className="search__row">
@@ -41,9 +34,6 @@ function Main() {
                                 <div className="tag__search">
                                     <Tag />
                                 </div>
-                                {/*<div className="status">
-                                    <Status />
-                                </div>*/}
                             </div>
 
                             <div className="col-md-12 placeholder__search">

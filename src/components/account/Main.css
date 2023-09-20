@@ -7,6 +7,17 @@
     font-style: normal;
 }
 
+.global__window__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    right: 5%;
+    left: 5%;
+}
+
 .account {
     margin: 10% 5%;
 
