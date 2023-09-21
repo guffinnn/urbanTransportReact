@@ -22,7 +22,7 @@ const App = lazy(() => import('./App')),
 const router = createBrowserRouter([
     {
         path: "/urbanTransportReact",
-        element: <App />,
+        element: <SearchPage />,
     },
     {
         path: "signUp",

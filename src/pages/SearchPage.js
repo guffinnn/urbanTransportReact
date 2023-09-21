@@ -11,7 +11,7 @@ let stopsInfo = [],
     routesInfo = [];
 
 // Заполняем массив остановок
-for(let i = 0; i < stops.length; i++) {stopsInfo[i] = stops[i].name;}
+for(let i = 0; i < stops.length; i++) {stopsInfo[i] = `${stops[i].name} , ${stops[i].street}`;}
 
 // Заполняем массив маршрутов
 for(let i = 0; i < routes.length; i++) {routesInfo[i] = `${routes[i].from} - ${routes[i].to}`;}
@@ -60,24 +60,30 @@ export default function SearchPage() {
                         <div className="search-text">Введите название остановки:</div>
                         <input id="search-box" onChange={filterBySearch} />
                     </div>
-                    <div className="col-md-5 placeholder__search">
-                        <div className="search-text">Доступные остановки 👇</div>
-                        <div id="item-list">
-                            <ol>
-                                {filteredListStops.map((item, index) => (
-                                    <li className="list__value" key={index}>{item}</li>
-                                ))}
-                            </ol>
+                    <div className="col-md-12 placeholders__frame">
+                        <div className="placeholder__search">
+                            <div className="search-text">Доступные остановки 👇</div>
+                            <div id="item-list">
+                                <ol>
+                                    {filteredListStops.map((item, index) => (
+                                        <li id="stop__name" className="list__value" key={index}>{item.split(' , ')[0]}
+                                            <ul>
+                                                <li id="street__name" className="list__value" key={index}>{item.split(' , ')[1]}</li>
+                                            </ul>
+                                        </li>
+                                    ))}
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-md-5 placeholder__search">
-                        <div className="search-text">Доступные маршруты 👇</div>
-                        <div id="item-list">
-                            <ol>
-                                {filteredListRoutes.map((item, index) => (
-                                    <li className="list__value" key={index}>{item}</li>
-                                ))}
-                            </ol>
+                        <div className="placeholder__search__second">
+                            <div className="search-text">Доступные маршруты 👇</div>
+                            <div>
+                                <ol>
+                                    {filteredListRoutes.map((item, index) => (
+                                        <li id="routes__name" className="list__value" key={index}>{item}</li>
+                                    ))}
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
