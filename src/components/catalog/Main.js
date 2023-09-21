@@ -15,7 +15,7 @@ function Main() {
         <main className="search">
             <div className="container category__filters__search">
                 <div className="row section__title__search">
-                    <h1 className="col-md-12 heading__search">Поиск</h1>
+                    <h1 className="col-md-12 heading__search">Каталог</h1>
                     <p className="col-md-12 text__search">Ищите нужные маршруты здесь</p>
                 </div>
                 <div className="col-md-6 modal__window__search">

@@ -8,9 +8,10 @@ function Footer() {
         <footer className="container__footer">
             <div className="content__footer">
                 <div className="links__footer">
-                    <a id="home" className="footer__link" href="/search">Главная</a>
+                    <a id="home" className="footer__link" href="/urbanTransportReact">Главная</a>
+                    <a id="search" className="footer__link" href="/search">Поиск</a>
                     <a id="map" className="footer__link" href="/map">Карта</a>
-                    <a id="catalog" className="footer__link" href="/search">Каталог</a>
+                    <a id="catalog" className="footer__link" href="/catalog">Каталог</a>
                     <a id="account" className="footer__link" href="/account">Аккаунт</a>
                 </div>
                 <div className="social__links__footer">

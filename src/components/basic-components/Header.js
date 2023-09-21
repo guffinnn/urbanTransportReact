@@ -18,6 +18,9 @@ function Header() {
                                     <a className="nav-link" href="/map">Карта</a>
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link" href="/catalog">Каталог</a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link" href="#">Корзина</a>
                                 </li>
                                 <li className="nav-item">

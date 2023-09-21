@@ -13,6 +13,7 @@ import Loading from "./components/basic-components/Loader";
 // Использование "ленивого" подключения страниц
 const App = lazy(() => import('./App')),
       SearchPage = lazy(() => import('./pages/SearchPage')),
+      Catalog = lazy(() => import('./pages/CatalogPage')),
       SignUp = lazy(() => import('./pages/SignUp')),
       LogIn = lazy(() => import('./pages/LogIn')),
       Map = lazy(() => import('./pages/Map')),
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     {
         path: "account",
         element: <Account />,
+    },
+    {
+        path: "catalog",
+        element: <Catalog />,
     },
 ]);
 
