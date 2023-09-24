@@ -4,7 +4,6 @@ import '../styles/SearchPage.css';
 import {stops} from "../components/json/stops";
 import {routes} from "../components/json/routes";
 import Header from "../components/basic-components/Header";
-/*import Footer from "../components/basic-components/Footer";*/
 
 // Массивы для хранения информации об остановках и маршрутах
 let stopsInfo = [],
@@ -14,7 +13,7 @@ let stopsInfo = [],
 for(let i = 0; i < stops.length; i++) {stopsInfo[i] = `${stops[i].name} , ${stops[i].street}`;}
 
 // Заполняем массив маршрутов
-for(let i = 0; i < routes.length; i++) {routesInfo[i] = `${routes[i].from} - ${routes[i].to}`;}
+for(let i = 0; i < routes.length; i++) {routesInfo[i] = `${routes[i].from} - ${routes[i].to} ; ${routes[i].stops}`;}
 
 // Функция лобавления компонента SearchPage
 export default function SearchPage() {
@@ -79,16 +78,31 @@ export default function SearchPage() {
                             <div className="search-text">Доступные маршруты 👇</div>
                             <div>
                                 <ol>
-                                    {filteredListRoutes.map((item, index) => (
-                                        <li id="routes__name" className="list__value" key={index}>{item}</li>
-                                    ))}
+                                    {filteredListRoutes.map((item, index) => {
+                                        const routeName = item.split(' ; ')[0];
+                                        const stops = (item.split(' ; ')[1].split(' - '));
+
+                                        return (
+                                            <li id="routes__name" className="list__value" key={index}>
+                                                {routeName}
+                                                {stops.length > 1 &&
+                                                    <ul>
+                                                        {stops.map((stop, stopIndex) => (
+                                                            <li id="stops__name" className="list__value" key={stopIndex}>
+                                                                {stop}
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                }
+                                            </li>
+                                        );
+                                    })}
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/*<Footer />*/}
         </div>
     );
 }
