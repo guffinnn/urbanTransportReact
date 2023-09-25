@@ -21,7 +21,7 @@ function Header() {
                                     <a className="nav-link" href="/catalog">Каталог</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Корзина</a>
+                                    <a className="nav-link" href="/basket">Корзина</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/account">Аккаунт</a>

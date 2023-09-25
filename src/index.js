@@ -17,12 +17,13 @@ const App = lazy(() => import('./App')),
       SignUp = lazy(() => import('./pages/SignUp')),
       LogIn = lazy(() => import('./pages/LogIn')),
       Map = lazy(() => import('./pages/Map')),
-      Account = lazy(() => import('./pages/Account'));
+      Account = lazy(() => import('./pages/Account')),
+      Basket = lazy(() => import('./pages/BasketPage'));
 
 const router = createBrowserRouter([
     {
         path: "/urbanTransportReact",
-        element: <SearchPage />,
+        element: <App />,
     },
     {
         path: "signUp",
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     {
         path: "catalog",
         element: <Catalog />,
+    },
+    {
+        path: "basket",
+        element: <Basket />,
     },
 ]);
 
