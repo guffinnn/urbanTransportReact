@@ -100,6 +100,26 @@
     flex-wrap: wrap;
 }
 
+/* Начало анимации */
+@keyframes routeVariant {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применение анимации на элементе */
+.route__card__global {
+    animation-name: routeVariant;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
+}
+
 .route__card__main {
     display: flex;
     width: auto;
@@ -166,32 +186,89 @@
     justify-content: center;
     align-items: center;
     gap: -85px;
+
+    height: 85px;
+
+    cursor: pointer;
 }
 
-.text__content__basket {
+.button__delete__basket .text__content__basket {
     color: #F43;
     font-family: 'Tilda Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
-
     margin: 0;
 }
 
-.svg__inside {
+.button__delete__basket .svg__inside {
     flex: 1 0 0;
     align-self: stretch;
-
     border-radius: 20px;
     background: #F2F2F2;
-
     display: flex;
     width: 85px;
     height: 85px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    position: absolute;
+}
+
+/* Стиль элемента при наведении */
+.button__delete__basket:hover {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.button__delete__basket:hover .text__content__basket {
+    color: #F43;
+    font-family: 'Tilda Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    margin: 0;
+}
+
+.button__delete__basket:hover .svg__inside {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #FF8080;
+    box-shadow: 0 0 10px 0 #FF8080;
+    display: flex;
+    width: 85px;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+}
+
+/* Начало анимации */
+@keyframes variant2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применение анимации на элементе */
+.button__delete__basket {
+    animation-name: variant2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
 }
 
 .price__box__global {
@@ -204,6 +281,26 @@
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0 0 10px 0 rgba(121, 156, 240, 0.50);
+}
+
+/* Начало анимации */
+@keyframes priceVariant {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применение анимации на элементе */
+.price__box__global {
+    animation-name: priceVariant;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
 }
 
 .heading__text__basket {
@@ -315,6 +412,8 @@
     border-radius: 20px;
     border: 1px solid #000;
     background: #FFF6D2;
+
+    cursor: pointer;
 }
 
 .name__of__button {

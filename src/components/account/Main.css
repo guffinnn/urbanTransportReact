@@ -7,6 +7,12 @@
     font-style: normal;
 }
 
+.route__card__global {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .global__window__modal {
     display: flex;
     flex-direction: column;
@@ -28,6 +34,47 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+}
+
+/* Начало анимации */
+@keyframes variantAccount {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применение анимации на элементе */
+.box__account {
+    animation-name: variantAccount;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
+}
+
+/* Применение анимации на элементе */
+.new__route__account {
+    animation-name: variantAccount;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
+}
+
+/* Применение анимации на элементе */
+.global__payment__frame {
+    animation-name: variantAccount;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
+}
+
+/* Применение анимации на элементе */
+.history__route__account {
+    animation-name: variantAccount;
+    animation-timing-function: ease-in-out;
+    animation-duration: 300ms;
 }
 
 .text__info__account {

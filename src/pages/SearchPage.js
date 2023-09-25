@@ -86,7 +86,7 @@ export default function SearchPage() {
                                             <li id="routes__name" className="list__value" key={index}>
                                                 {routeName}
                                                 {stops.length > 1 &&
-                                                    <ul>
+                                                    <ul className="stops__for__routes">
                                                         {stops.map((stop, stopIndex) => (
                                                             <li id="stops__name" className="list__value" key={stopIndex}>
                                                                 {stop}

@@ -17,6 +17,7 @@ function Main() {
                 <div className="row main__content__basket">
                     <div className="col-md-6 routes__boxes__basket">
                         <RouteCard />
+                        <RouteCard />
                     </div>
                     <div className="col-md-6 price__box__basket">
                         <p className="heading__price__box">Оплатить корзину</p>
