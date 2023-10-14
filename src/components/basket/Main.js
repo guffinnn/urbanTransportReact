@@ -10,11 +10,11 @@ function Main() {
     return (
         <main className="basket">
             <div className="container category__filters__basket">
-                <div className="row section__title__basket">
+                <div className="section__title__basket">
                     <h1 className="col-md-12 heading__basket">Корзина</h1>
                     <p className="col-md-12 text__basket">Выберите товары для оплаты</p>
                 </div>
-                <div className="row main__content__basket">
+                <div className="main__content__basket">
                     <div className="col-md-6 routes__boxes__basket">
                         <RouteCard />
                         <RouteCard />

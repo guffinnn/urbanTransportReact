@@ -1,6 +1,6 @@
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 0;
-}
+}*/
 
 @font-face {
     font-family: 'Ambidexter';
@@ -403,7 +403,7 @@ body {
     text-align: center;
 }
 
-footer {
+footer, .footer__for__first__page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,4 +506,6 @@ footer {
 .href {
     padding: 10px;
     text-decoration-line: underline;
+
+    margin: 0;
 }

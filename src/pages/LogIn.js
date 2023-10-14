@@ -3,10 +3,6 @@ import React, { useState } from 'react';
 import '../styles/log_in_style.css';
 import Input from "../components/log-in/Input";
 import Submit from "../components/log-in/Submit";
-/*import { useHistory } from 'react-router-dom';*/
-/*import {users} from "../components/json/users";
-
-export let user_PK = users.users_PK;*/
 
 // Функция добавления компонента LogIn
 function LogIn() {

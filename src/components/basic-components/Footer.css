@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-footer {
+footer, .container__footer {
     display: flex;
     width: 100%;
     padding: 80px 64px;
@@ -30,6 +30,8 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 32px;
+
+    margin: 0;
 }
 
 .social__links__footer {
@@ -83,6 +85,8 @@ footer {
     text-decoration-line: underline;
 
     cursor: pointer;
+
+    margin: 0;
 }
 
 .footer__link {
@@ -94,6 +98,16 @@ footer {
     line-height: 150%; /* 24px */
 
     cursor: pointer;
+
+    margin: 0;
+}
+
+.href__footer {
+    margin: 0;
+}
+
+.commercial__links__footer {
+    padding: 14px;
 }
 
 .footer__link:hover {

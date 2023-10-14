@@ -9,9 +9,10 @@ import {
 
 // Импорт страницы загрузки
 import Loading from "./components/basic-components/Loader";
+/*import FirstPage from "./pages/FirstPage";*/
 
 // Использование "ленивого" подключения страниц
-const App = lazy(() => import('./App')),
+const FirstPage = lazy(() => import('./pages/FirstPage')),
       SearchPage = lazy(() => import('./pages/SearchPage')),
       Catalog = lazy(() => import('./pages/CatalogPage')),
       SignUp = lazy(() => import('./pages/SignUp')),
@@ -23,7 +24,7 @@ const App = lazy(() => import('./App')),
 const router = createBrowserRouter([
     {
         path: "/urbanTransportReact",
-        element: <SearchPage />,
+        element: <FirstPage />,
     },
     {
         path: "signUp",
